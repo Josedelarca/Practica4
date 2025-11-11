@@ -4,6 +4,8 @@ import { Usuarios } from './components/pages/ListaUsuarios.jsx';
 import { Productos } from './components/pages/Productos.jsx';
 import Inicio from './components/pages/inicio.jsx';
 import { Tiempo } from './components/Tiempo.jsx';
+import Footer from './components/Footer.jsx';
+import CurrencyConverter from './components/CurrencyConverter.jsx';
 
 function App() {
 
@@ -27,7 +29,7 @@ function App() {
                 <Link className="nav-link" to="/productos">Productos</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/tiempo">Tiempo</Link>
+                <Link className="nav-link" to="/divisas">Divisas</Link>
               </li>
             </ul>
           </div>
@@ -39,9 +41,11 @@ function App() {
         <Route path='/' element={<Inicio/>}></Route>
         <Route path='/clientes' element={<Usuarios/>} />
         <Route path='/productos' element={<Productos/>}></Route>
-  <Route path='/tiempo' element={<Tiempo/>}></Route>
+  <Route path='/divisas' element={<CurrencyConverter/>}></Route>
 
       </Routes>
+
+      <Footer />
 
     </>
   )

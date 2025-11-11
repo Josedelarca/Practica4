@@ -1,0 +1,50 @@
+.converter-simple, .converter-root, .converter-card, .converter-simple .card {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.card.converter-card, .card.converter-simple, .card.p-3 {
+  padding: 1rem;
+}
+
+.converter-simple input, .converter-simple select {
+  padding: 0.35rem 0.5rem;
+}
+
+/* small responsive */
+@media (max-width: 480px){
+  .converter-simple { padding: 0.5rem }
+  .converter-simple div[style] { flex-wrap:wrap }
+}
+
+/* New styles for focused USD↔HNL converter */
+.converter-card{ max-width:760px; margin:1.5rem auto; padding:1.25rem; border-radius:10px; box-shadow:0 10px 30px rgba(20,20,40,0.08); }
+.converter-header{ margin-bottom:0.5rem }
+.converter-header h4{ margin:0 0 0.15rem 0; font-weight:600 }
+.converter-header small{ display:block }
+.converter-body .form-label{ font-size:0.95rem; margin-bottom:0.25rem }
+.converter-body .row{ gap:12px; }
+
+/* Make each col-auto align its children centrally so flags sit beside selects */
+.converter-body .row .col-auto{ display:flex; align-items:center; gap:8px; }
+.swap-col{ display:flex; align-items:center; justify-content:center }
+.swap-btn{ width:44px; height:44px; border-radius:8px; font-size:18px }
+.converter-result{ background:linear-gradient(90deg, rgba(249,250,252,1) 0%, rgba(255,255,255,1) 100%); padding:0.7rem; border-radius:6px; border:1px solid rgba(0,0,0,0.04) }
+
+@media (max-width: 576px){
+  .converter-body .row{ gap:0.5rem }
+  .swap-col{ order:3 }
+}
+
+/* Flag icons */
+.flag-icon{ width:36px; height:22px; display:block }
+
+/* Accent for primary button inside converter */
+.converter-card .btn-primary{
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+.converter-card .btn-primary:hover{
+  background-color: #1e4fc4;
+  border-color: #1e4fc4;
+}

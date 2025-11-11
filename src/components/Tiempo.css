@@ -1,0 +1,28 @@
+.tiempo-root {
+  margin-top: 1rem;
+}
+
+.tiempo-card {
+  width: 360px;
+  border-radius: 8px;
+}
+
+.tiempo-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.tiempo-content {
+  padding-top: 8px;
+}
+
+.tiempo-loading {
+  padding: 1rem 0;
+  text-align: center;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .tiempo-card { width: 100%; }
+  .tiempo-icon { width: 48px; height: 48px; }
+}

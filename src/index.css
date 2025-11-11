@@ -4,8 +4,9 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Usamos colores neutrales por defecto; el body establece el fondo gris claro */
+  color: #212529;
+  background-color: #f2f2f2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +29,32 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+/* Navbar overrides: encabezado en negro con texto claro */
+.navbar{
+  background-color:#000 !important;
+}
+.navbar .navbar-brand, .navbar .nav-link{
+  color: #fff !important;
+}
+.navbar .nav-link:hover{
+  color: #ddd !important;
+}
+
+/* Cards: fondo claro y borde sutil para contraste sobre el gris de fondo */
+.card{
+  background-color: #ffffff;
+  color: #212529;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 8px;
+}
+
+/* Footer: fondo negro coherente con el header */
+.footer{
+  background-color: #000 !important;
+  color: #fff !important;
+  border-top: 1px solid rgba(255,255,255,0.04);
 }
 
 h1 {
